@@ -42,5 +42,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="practice.html" target="_self"><button class="StyledButtonBlock-ATC" type="button" aria-label="Add to Bag - $14" data-qa="kit-atb" height="auto">
             <div width="100%" class="sc-bdVaJa sc-bwzfXH CtaWrapper-yxzaoo-0 jzEmty">
                 <div class="sc-addtocartclass">Add to Bag — £14</div></div></button></a>
+        
+        analytics.identify(' {{user.id}} ', {
+  name: '{{user.fullname}}',
+  email: '{{user.email}}'
+});
+
     </body>
 </html>
