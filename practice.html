@@ -162,7 +162,26 @@
         			// EVENT PARAMETERS 
         		}) 
 
-        		// END - PLACE YOUR FUNCTIONS IN THIS SECTION    		
+        		// END - PLACE YOUR FUNCTIONS IN THIS SECTION  
+
+
+			//KAT ADDING DATA LAYER VARIABLE
+			dataLayer.push({ ecommerce: null });
+			dataLayer.push({
+			  event: "add_to_cart",
+			  ecommerce: {
+			    currency: "USD",
+			    value: price,
+			    items: [
+			    {
+			      item_id: productId,
+			      item_name: title,
+			price: price,
+			      quantity: '1'
+			    }]
+  }
+});
+				
         	}
 
         	function viewContent(title, productId, price) {
