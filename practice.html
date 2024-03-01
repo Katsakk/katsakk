@@ -113,9 +113,10 @@
 			window.dataLayer = window.dataLayer || [];
 			window.dataLayer.push({
 			 'event': 'REGISTRATION',
+			'user_data': {
 			 'phone_numer': phone,
-			 'email_address': email
-
+			 'email': email
+			}
 			 });
 
 		//KAT ADDING GTAG EVENT
@@ -178,7 +179,11 @@
 			      item_name: title,
 			price: price,
 			      quantity: '1'
-			    }]
+			    }],
+			'user_data': {
+			 'phone_numer': phone,
+			 'email': email
+			}
   }
 });
 				
@@ -217,7 +222,11 @@
 			      item_name: title,
 			price: price,
 			      quantity: '1'
-			    }]
+			    }],
+			'user_data': {
+			 'phone_numer': phone,
+			 'email': email
+			}
   }
 });
 			
